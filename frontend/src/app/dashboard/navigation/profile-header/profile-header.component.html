@@ -1,0 +1,24 @@
+<!-- HEADER -->
+ <div class="header">
+  <a class="logo" routerLink="/home"  >
+    <img src="assets/img/logos/2.png" class="main-logo" alt="logo" id="main_logo" style="width:100px;height:100px;">
+  </a>
+
+  <div class="header-right">
+  <div class="nav-toggle"></div>
+    <a class="!active" routerLink="/">Home</a>
+    <a class="!active" routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/features">Features</a>
+    <a routerLink="/customers">Customers</a>
+    <a >
+      <button mat-raised-button class="profile-button"  mat-button [matMenuTriggerFor]="menu"><span>My Profile</span></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>My Account</button>
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Sign Out</button>
+      </mat-menu>
+    </a>
+  </div>
+</div>
+

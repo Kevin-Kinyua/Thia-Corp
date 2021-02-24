@@ -1,0 +1,64 @@
+
+.auth-content{
+  background-color: #fff;
+  background: #fff;
+  height: 500px;
+  width: 1530px;
+  margin-left: -7px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sign-in-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.sign-in-full-width {
+  width: 100%;
+}
+
+
+.sign-in-button{
+  box-shadow: 2px 2px 2px #000;
+  background-color: #7f6ced;
+  color:
+  #fff;
+  font-size: 20px;
+  border-radius: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  margin-top: -600px;
+  margin-right: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.sign-in-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sign-in-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sign-in-button:hover span {
+  padding-right: 25px;
+}
+
+.sign-in-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { SignInComponent } from './auth/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
@@ -31,6 +32,14 @@ import { FeaturesComponent } from './landing-page/features/features.component';
 import { CarouselComponent } from './landing-page/carousel/carousel.component';
 import { AboutUsComponent } from './landing-page/about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { SidenavListComponent } from './dashboard/navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './dashboard/navigation/navtabs/navtabs.component';
+import { UsersComponent } from './users/users.component';
+import { ProfileHeaderComponent } from './dashboard/navigation/profile-header/profile-header.component';
+import { ProfileFooterComponent } from './dashboard/navigation/profile-footer/profile-footer.component';
+import { ProfileComponent } from './users/profile/profile.component';
+import { MyAccountComponent } from './wallets/my-account/my-account.component';
+import { SecurityComponent } from './auth/security/security.component';
 
 @NgModule({
   declarations: [
@@ -59,13 +68,23 @@ import { FooterComponent } from './footer/footer.component';
     FeaturesComponent,
     CarouselComponent,
     AboutUsComponent,
-    FooterComponent
+    FooterComponent,
+    SidenavListComponent,
+    NavtabsComponent,
+    UsersComponent,
+    ProfileHeaderComponent,
+    ProfileFooterComponent,
+    ProfileComponent,
+    MyAccountComponent,
+    SecurityComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,42 +1,38 @@
-.footer{
+.header{
   background-color:
   #7f6ced;
   margin-left: -10px;
   margin-right: -10px;
-  margin-bottom: -10px;
+  margin-top: -10px;
   overflow: hidden;
   padding: 10px 10px ;
   content: initial-scale;
-  height: 150px;
-  bottom: 0%;
-  /* position: sticky; */
-  z-index: 1000;
 }
 
-.footer a {
+.header a {
   float: left;
   color: white;
   text-align: center;
   padding-right: 15px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 20px;
   border-radius: 3px;
   margin-top: -10px;
   word-spacing: 130px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.footer a:hover {
+.header a:hover {
   text-decoration: underline;
   text-align: center;
 }
 
-.footer a.active {
+.header a.active {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.footer-right {
+.header-right {
   float: right;
   margin-top: 40px;
   justify-content: 30px;
@@ -72,28 +68,28 @@
 }
 
 
-.login-button{
-  box-shadow: 2px 2px 2px #000;
+.profile-button{
+  /* box-shadow: 2px 2px 2px #000; */
   background-color: #ffffff;
   color:
   #7f6ced;
-  font-size: 20px;
-  border-radius: 3px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
-  margin-top: -600px;
-  margin-right: 50px;
-  transition: all 0.5s;
-  cursor: pointer;
+  /* font-size: 20px; */
+  /* border-radius: 50px; */
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman'; */
+  /* margin-top: -600px; */
+  /* margin-right: 50px; */
+  /* transition: all 0.5s; */
+  /* cursor: pointer; */
 }
 
-.login-button span {
+.profile-button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.login-button span:after {
+.profile-button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -102,11 +98,11 @@
   transition: 0.5s;
 }
 
-.login-button:hover span {
+.profile-button:hover span {
   padding-right: 25px;
 }
 
-.login-button:hover span:after {
+.profile-button:hover span:after {
   opacity: 1;
   right: 0;
 }
