@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-profile-header',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileHeaderComponent implements OnInit {
 
+  @Output() SideNavigationToggle = new EventEmitter();
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+  }
+
+  onToggleOpenSidenav() {
+
+    this.SideNavigationToggle.emit();
+
   }
 
 }

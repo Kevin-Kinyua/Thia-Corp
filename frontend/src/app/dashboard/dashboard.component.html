@@ -1,3 +1,20 @@
-<app-profile-header></app-profile-header>
-<div class="dashboard-content"></div>
+
+<app-profile-header (SideNavigationToggle)="sidenav.toggle()"></app-profile-header>
+ <div class="dashboard-content">
+
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #sidenav >
+        <app-sidenav-list></app-sidenav-list>
+      </mat-sidenav>
+
+      <mat-sidenav-content>
+
+
+        <app-navtabs></app-navtabs>
+      </mat-sidenav-content>
+
+
+    </mat-sidenav-container>
+    </div>
+
 <app-profile-footer></app-profile-footer>

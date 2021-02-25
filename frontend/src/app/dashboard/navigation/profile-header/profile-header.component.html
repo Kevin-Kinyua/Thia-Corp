@@ -1,8 +1,12 @@
 <!-- HEADER -->
  <div class="header">
-  <a class="logo" routerLink="/home"  >
+  <!--<a class="logo" routerLink="/home"  >
     <img src="assets/img/logos/2.png" class="main-logo" alt="logo" id="main_logo" style="width:100px;height:100px;">
-  </a>
+  </a>-->
+
+    <button mat-icon-button (click)="onToggleOpenSidenav()" style="color:white;">
+    <mat-icon>menu</mat-icon>
+  </button>
 
   <div class="header-right">
   <div class="nav-toggle"></div>
@@ -21,4 +25,3 @@
     </a>
   </div>
 </div>
-

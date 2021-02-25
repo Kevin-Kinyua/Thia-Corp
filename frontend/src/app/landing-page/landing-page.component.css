@@ -287,4 +287,6 @@ svg#clouds {
   background: #888;
   height: 300px;
   width: 100%;
+  align-content: flex-end;
+  /* display: flex; */
 }
